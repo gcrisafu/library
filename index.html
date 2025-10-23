@@ -7,8 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-
+    <div id="container">
+     <dialog>
+         <form id="addBook" method="dialog">
+            <div>
+            <label for="title">Title</label><br>
+            <input type="text" id="title" name="title"><br><br>
+            <label for="author">Author</label><br>
+            <input type="text" id="author" name="author"><br><br>
+            <label for="pages">Pages</label><br>
+            <input type="number" id="pages" name="pages"><br><br>
+            <p>Have you read?</p><br>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="read" value="true"><br><br>
+            <label for="no">No</label>
+            <input type="radio" id="no" name="read" value="false"><br><br>           
+            <button>Close</button><br><br>
+            <button autofocus id="submitBtn" type="submit" onclick="checkRadio()"> Submit</button><br><br>
+        </form>
+    </dialog>
+    <button>Show the dialog</button>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
