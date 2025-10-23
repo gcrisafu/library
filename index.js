@@ -64,7 +64,7 @@ const form = document.getElementById('addBook')
 
 
 
-submit.addEventListener('click', function(event) {
+const handleFormSubmission = (event) => {
     event.preventDefault();
 
     const title = document.getElementById("title").value.trim();
@@ -80,7 +80,9 @@ submit.addEventListener('click', function(event) {
     displayBooks(bookArr);
     dialog.close();
     form.reset();
-});
+};
+
+
 
 
 
