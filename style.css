@@ -7,6 +7,9 @@
     font-display: swap;
 }
 
+body {
+  background-color:rgb(196, 159, 107)
+}
 
 ::backdrop {
   background-image: linear-gradient(
@@ -29,15 +32,19 @@
 
 .book-card {
   padding:20px;
-  background-color:aquamarine;
+  background-color:rgb(106, 78, 57);
   display:flex;
   border-radius: 15px;
-  color:rgb(55, 95, 75);
-  font-family:Montserrat;
+  color:rgb(255, 255, 255);
+  font-family:Montserrat, Arial, sans-serif;
+  font-weight:bold;
+  font-size: 18px;
 
 }
 
 #openDialogBtn {
+  font-family:Montserrat, Arial, sans-serif;
+  font-weight:bold;
   padding: 20px;
   margin: 10px;
 }
