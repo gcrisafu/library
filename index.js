@@ -26,10 +26,19 @@ bookArr.push(book1, book2, book3);
 
 
 const displayBooks = function (arr){
+container.innerHTML = '';
+
 arr.forEach((book, index) => {
     const bookDiv = document.createElement('div');
     bookDiv.classList.add('book-card');
     bookDiv.textContent = book.info();
+
+    const toggleBtn = document.createElement('button');
+    toggleBtn.textContent = book.read ? 'Mark as Undread' : 'Mark as Read';
+    toggleBtn.addEventListener('click', () => {
+        book.read = !book.read;
+        displayBooks(arr);
+    })
 
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'remove';
@@ -40,6 +49,7 @@ arr.forEach((book, index) => {
     });
 
     bookDiv.appendChild(removeBtn);
+    bookDiv.appendChild(toggleBtn);
     container.appendChild(bookDiv);
 })
 }
