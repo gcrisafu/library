@@ -52,10 +52,11 @@ displayBooks(bookArr);
 // modal dialog 
 
 const dialog = document.querySelector("dialog");
-const showButton = document.querySelector("dialog + button");
-const closeButton = document.querySelector("dialog button");
+const showButton = document.getElementById("openDialogBtn");
+const closeButton = document.getElementById("closeDialogBtn");
 
-
+showButton.addEventListener("click", () => dialog.showModal());
+closeButton.addEventListener("click", () => dialog.close());
 
 
 const submit = document.querySelector("#submitBtn");
@@ -82,7 +83,7 @@ const handleFormSubmission = (event) => {
     form.reset();
 };
 
-
+submit.addEventListener("click", handleFormSubmission);
 
 
 

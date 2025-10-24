@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
+    <div id="container"></div>
         <dialog>
+
             <form id="addBook">
                 <div>
                     <label for="title">Title</label><br>
@@ -27,14 +28,15 @@
                     <label for="no">No</label>
                     <input type="radio" id="no" name="read" value="false"><br><br>
 
-                    <button type="button">Close</button><br><br>
+                    <button id="closeDialogBtn" type="button">Close</button><br><br>
                     <button autofocus id="submitBtn" type="submit">Submit</button><br><br>
                 </div>
             </form>
         </dialog>
+        <button id="openDialogBtn" type="button">Add Book</button>
 
-        <button>Add Book</button>
-    </div>
+
+  
 
     <script src="index.js"></script>
 </body>

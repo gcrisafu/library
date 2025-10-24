@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Thin.woff2') format('woff2'),
+        url('Montserrat-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 ::backdrop {
   background-image: linear-gradient(
     45deg,
@@ -10,8 +20,23 @@
 }
 
 
-h3 {
-    display:flex;
-    background-color:rgb(133, 255, 210);
-    color:darkslategrey
+#container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap:10px;
+}
+
+.book-card {
+  padding:20px;
+  background-color:aquamarine;
+  display:flex;
+  border-radius: 15px;
+  color:rgb(55, 95, 75);
+
+}
+
+#openDialogBtn {
+  padding: 20px;
+  margin: 10px;
 }
